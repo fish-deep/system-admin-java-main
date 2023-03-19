@@ -47,7 +47,7 @@ public class NewsController extends BaseController {
         }
         return Result.succ(data);
     }
-
+    //疫情热点数据
     @GetMapping("/infiniteNews")
     public Result infiniteNews(String id){
         String url = StrUtil.isNotBlank(id) ? "https://m.sm.cn/api/rest?format=json&method=Huoshenshan.feed&type=latest&id=" + id : "https://m.sm.cn/api/rest?format=json&method=Huoshenshan.feed&type=latest";
@@ -98,6 +98,7 @@ public class NewsController extends BaseController {
         return Result.succ(object);
     }
 */
+    //网络信息辟谣
     @GetMapping("/rumor")
     public Result rumor(String offset){
         String url = StrUtil.isNotBlank(offset) ? "https://c.m.163.com/ug/api/wuhan/app/article/list?limit=6&offset=" + offset : "https://c.m.163.com/ug/api/wuhan/app/article/list?limit=6";

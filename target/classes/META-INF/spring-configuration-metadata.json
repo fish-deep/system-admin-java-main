@@ -35,8 +35,7 @@
     {
       "name": "system.jwt.expire",
       "type": "java.lang.Long",
-      "sourceType": "com.fanchen.utils.JwtUtil",
-      "defaultValue": 0
+      "sourceType": "com.fanchen.utils.JwtUtil"
     },
     {
       "name": "system.jwt.header",

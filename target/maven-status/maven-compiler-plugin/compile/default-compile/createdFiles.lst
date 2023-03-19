@@ -13,6 +13,7 @@ com\fanchen\mapper\SysNoticeMapper.class
 com\fanchen\entity\AccessReturn.class
 com\fanchen\entity\SysLoginInfo.class
 com\fanchen\service\impl\SysRoleMenuServiceImpl.class
+com\fanchen\controller\HealthClockController.class
 com\fanchen\entity\GoodType.class
 com\fanchen\security\LoginFailHandler.class
 com\fanchen\common\lang\Result.class
@@ -21,10 +22,12 @@ com\fanchen\aspectj\LogAspectj.class
 com\fanchen\controller\handler\MyMetaObjectHandler.class
 com\fanchen\common\dto\GoodDto.class
 com\fanchen\mapper\GoodInfoMapper.class
+com\fanchen\controller\HealthReportController.class
 com\fanchen\utils\HttpUtils$TrustAnyHostnameVerifier.class
 com\fanchen\mapper\AccessReturnMapper.class
 com\fanchen\entity\server\Jvm.class
 com\fanchen\utils\MimeTypeUtils.class
+com\fanchen\service\HealthClockService.class
 com\fanchen\common\lang\Const.class
 com\fanchen\controller\LeaveApplyController.class
 com\fanchen\controller\GoodStockController.class
@@ -41,13 +44,18 @@ com\fanchen\service\SysUserService.class
 com\fanchen\utils\IpUtils.class
 com\fanchen\service\impl\SysRoleServiceImpl.class
 com\fanchen\utils\HttpUtils$TrustAnyTrustManager.class
+com\fanchen\service\impl\HealthClockServiceImpl.class
+com\fanchen\mapper\HealthClockMapper.class
 com\fanchen\entity\SysUser.class
 com\fanchen\service\impl\SysUserRoleServiceImpl.class
+com\fanchen\service\impl\HealthReportServiceImpl.class
+com\fanchen\entity\HealthReport.class
 com\fanchen\entity\server\Cpu.class
 com\fanchen\entity\SysRole.class
 com\fanchen\config\RedisConfig.class
 com\fanchen\mapper\SysLoginInfoMapper.class
 com\fanchen\config\KaptchaConfig.class
+com\fanchen\entity\HealthClock.class
 com\fanchen\entity\LeaveApply.class
 com\fanchen\common\exception\CaptchaException.class
 com\fanchen\security\CaptchaFilter.class
@@ -93,6 +101,7 @@ com\fanchen\mapper\SysUserMapper.class
 com\fanchen\service\impl\SysOperateLogServiceImpl.class
 com\fanchen\utils\JwtUtil.class
 com\fanchen\service\impl\SysDeptServiceImpl.class
+com\fanchen\mapper\HealthReportMapper.class
 com\fanchen\security\JwtAccessDeniedHandler.class
 com\fanchen\mapper\SysRoleMapper.class
 com\fanchen\security\JwtLogoutSuccessHandler.class
@@ -117,6 +126,7 @@ com\fanchen\security\LoginSuccessHandler.class
 com\fanchen\service\HealthService.class
 com\fanchen\service\impl\SysMenuServiceImpl.class
 com\fanchen\service\LeaveApplyService.class
+com\fanchen\service\HealthReportService.class
 com\fanchen\entity\SysNotice.class
 com\fanchen\service\impl\SysNoticeServiceImpl.class
 com\fanchen\utils\HTMLFilter.class

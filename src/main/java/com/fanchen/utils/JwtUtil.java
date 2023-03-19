@@ -9,6 +9,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
+/**
+ * JwtUtil
+ */
 @Data
 @Component
 @ConfigurationProperties(prefix = "system.jwt")//yml文件中

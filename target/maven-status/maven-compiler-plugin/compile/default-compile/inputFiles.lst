@@ -11,14 +11,17 @@ E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\m
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\service\AccessRegisterService.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\service\impl\AccessRegisterServiceImpl.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\controller\RedisController.java
+E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\entity\HealthReport.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\common\lang\Const.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\controller\RegisterController.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\config\HttpConverterConfig.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\utils\HttpUtils.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\controller\NewsController.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\utils\HTMLFilter.java
+E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\mapper\HealthReportMapper.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\entity\Health.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\entity\server\Arith.java
+E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\service\HealthClockService.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\service\SysRoleMenuService.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\utils\RedisUtil.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\service\GoodTypeService.java
@@ -39,6 +42,7 @@ E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\m
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\entity\server\SysFile.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\mapper\AccessRegisterMapper.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\service\impl\GoodTypeServiceImpl.java
+E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\service\impl\HealthClockServiceImpl.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\entity\LeaveApply.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\aspectj\LogAspectj.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\controller\KaptchaController.java
@@ -54,6 +58,7 @@ E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\m
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\controller\GoodStockController.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\entity\server\Server.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\config\SecurityConfig.java
+E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\entity\HealthClock.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\mapper\SysUserMapper.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\security\CaptchaFilter.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\entity\GoodType.java
@@ -67,11 +72,13 @@ E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\m
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\entity\GoodStock.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\service\SysDeptService.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\controller\AccessRegisterController.java
+E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\controller\HealthReportController.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\service\impl\SysUserRoleServiceImpl.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\common\lang\Result.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\entity\AccessRegister.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\mapper\SysOperateLogMapper.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\security\AccountUser.java
+E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\service\HealthReportService.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\service\impl\SysNoticeServiceImpl.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\utils\UploadUtil.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\utils\DateUtils.java
@@ -86,6 +93,7 @@ E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\m
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\utils\IpUtils.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\service\impl\SysMenuServiceImpl.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\entity\server\Cpu.java
+E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\service\impl\HealthReportServiceImpl.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\utils\AsyncTaskUtil.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\mapper\SysLoginInfoMapper.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\controller\BaseController.java
@@ -112,6 +120,7 @@ E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\m
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\security\JwtAccessDeniedHandler.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\config\RedisConfig.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\security\JwtAuthenticationFilter.java
+E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\mapper\HealthClockMapper.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\mapper\GoodTypeMapper.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\controller\SysRoleController.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\service\AccessReturnService.java
@@ -123,6 +132,7 @@ E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\m
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\service\impl\SysDeptServiceImpl.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\entity\GoodInfo.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\mapper\GoodInfoMapper.java
+E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\controller\HealthClockController.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\service\SysLoginInfoService.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\security\JwtLogoutSuccessHandler.java
 E:\java学习\管理系统\我希望是最后一个\system-admin-java-main\src\main\java\com\fanchen\service\SysNoticeService.java

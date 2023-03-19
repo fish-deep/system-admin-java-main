@@ -10,10 +10,10 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties(prefix = "system.code")//读取配置文件中的注册码设置
 public class CodeUtil {
-    private String studentCode;
-    private String teacherCode;
-    private Long studentRole;
-    private Long teacherRole;
+    private String studentCode; //stu
+    private String teacherCode; //teac
+    private Long studentRole;   //50L
+    private Long teacherRole;   //3L
     public Long switchRole(Integer roleType, String registerCode){
         switch (roleType){
             case Const.ROLE_STUDENT:
