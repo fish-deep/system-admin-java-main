@@ -27,7 +27,7 @@ import javax.validation.constraints.NotBlank;
 @ApiModel(value="SysDept对象", description="部门表")
 public class SysDept implements Serializable {
 
-    private static final long serialVersionUID = 35701512L;
+    private static final long serialVersionUID = 35701522L;
 
     @ApiModelProperty(value = "部门id")
     @TableId(value = "dept_id", type = IdType.AUTO)

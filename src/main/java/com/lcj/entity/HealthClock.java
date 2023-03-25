@@ -17,8 +17,6 @@ import java.util.Date;
  * 打卡健康表
  * </p>
  *
- * @author fanchen
- * @since 2021-12-15
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

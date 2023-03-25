@@ -63,10 +63,19 @@ public class GoodStockController extends BaseController<GoodStock> {
             goodStockList.add(stock);
             GoodInfo goodInfo = goodInfoService.getById(goodDto.getId());
             int res;
-            if (goodStock.getOperateType() == 0) {
+/*            if (goodStock.getOperateType() == 0) {
                 res = goodInfo.getTotal() + goodDto.getGoodNum();
             } else {
                 res = goodInfo.getTotal() - goodDto.getGoodNum();
+            }*/
+            if (goodStock.getOperateType() == 0) {
+                res = goodInfo.getTotal() + goodDto.getGoodNum();
+            } else {
+                int num = goodDto.getGoodNum();
+                if (num > goodInfo.getTotal()) {
+                    throw new RuntimeException("物品 " + goodDto.getGoodName() + " 库存不足，出库失败！");
+                }
+                res = goodInfo.getTotal() - num;
             }
             goodInfo.setTotal(res);
             goodInfoService.updateById(goodInfo);

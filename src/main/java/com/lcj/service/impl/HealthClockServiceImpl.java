@@ -13,8 +13,6 @@ import javax.annotation.Resource;
  * 打卡健康表 服务实现类
  * </p>
  *
- * @author fanchen
- * @since 2021-12-15
  */
 @Service
 public class HealthClockServiceImpl extends ServiceImpl<HealthClockMapper, HealthClock> implements HealthClockService {

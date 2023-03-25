@@ -24,7 +24,7 @@ public class CodeGenerator {
         GlobalConfig config = new GlobalConfig();
         String project_path = System.getProperty("user.dir");//获取项目文件夹目录
         config.setOutputDir(project_path + "/src/main/java");//设置生成目录
-        config.setAuthor("fanchen");
+        config.setAuthor("lcj");
         config.setOpen(false);//是否打开资源管理器
         config.setFileOverride(false);//是否覆盖
         config.setServiceName("%sService");//去Service前缀I
@@ -36,13 +36,13 @@ public class CodeGenerator {
         DataSourceConfig dataSourceConfig = new DataSourceConfig();
         dataSourceConfig.setDriverName("com.mysql.cj.jdbc.Driver");
         dataSourceConfig.setUsername("root");
-        dataSourceConfig.setPassword("fanchen520");
+        dataSourceConfig.setPassword("lcj123");
         dataSourceConfig.setUrl("jdbc:mysql://localhost:3306/system_admin?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&useSSL=false");
         dataSourceConfig.setDbType(DbType.MYSQL);
         generator.setDataSource(dataSourceConfig);
         //3.包的配置
         PackageConfig packageConfig = new PackageConfig();
-        packageConfig.setParent("com.fanchen");
+        packageConfig.setParent("com.lcj");
         packageConfig.setEntity("entity");
         packageConfig.setMapper("mapper");
         packageConfig.setService("service");

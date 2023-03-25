@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.fanchen.entity")
+@MapperScan("com.lcj.mapper")
 public class SystemAdminJavaApplication {
     public static void main(String[] args) {
         SpringApplication.run(SystemAdminJavaApplication.class, args);

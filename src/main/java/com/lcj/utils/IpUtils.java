@@ -7,8 +7,11 @@ import java.net.UnknownHostException;
 /**
  * 获取IP方法
  */
-public class IpUtils
-{
+public class IpUtils {
+    /**
+     * 获取本机IP地址
+     * @return
+     */
     public static String getHostIp()
     {
         try
@@ -21,6 +24,10 @@ public class IpUtils
         return "127.0.0.1";
     }
 
+    /**
+     * 获取本机主机名
+     * @return
+     */
     public static String getHostName()
     {
         try
@@ -32,6 +39,12 @@ public class IpUtils
         }
         return "未知";
     }
+
+    /**
+     * 获取访问者IP地址
+     * @param request
+     * @return
+     */
 
     public static String getIpAddr(HttpServletRequest request)
     {
