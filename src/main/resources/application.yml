@@ -78,7 +78,9 @@ system:
     key: asdhkmytoysfwhgdnkyklyutldwyiram
   code:
     studentCode: stu
-    teacherCode: teac
+    teacherCode: tea
+    serviceCode: ser
     studentRole: 3
     teacherRole: 8
+    serviceRole: 10
 

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.fanchen.mapper.SysRoleMapper">
 
-    <insert id="insertRole" parameterType="com.fanchen.entity.SysRole" useGeneratedKeys="true" keyProperty="id">
+    <insert id="insertRole" parameterType="com.lcj.entity.SysRole" useGeneratedKeys="true" keyProperty="id">
         insert into sys_role(
         <if test="id != null and id != 0">id,</if>
         <if test="name != null and name != ''">`name`,</if>
