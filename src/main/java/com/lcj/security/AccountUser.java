@@ -1,4 +1,4 @@
-package com.fanchen.security;
+package com.lcj.security;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

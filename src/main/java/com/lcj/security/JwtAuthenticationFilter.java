@@ -1,7 +1,7 @@
-package com.fanchen.security;
+package com.lcj.security;
 
 import cn.hutool.core.util.StrUtil;
-import com.fanchen.utils.JwtUtil;
+import com.lcj.utils.JwtUtil;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;
 import org.springframework.security.authentication.AuthenticationManager;

@@ -1,9 +1,9 @@
-package com.fanchen.security;
+package com.lcj.security;
 
 import cn.hutool.json.JSONUtil;
-import com.fanchen.common.lang.Result;
-import com.fanchen.utils.AsyncTaskUtil;
-import com.fanchen.utils.JwtUtil;
+import com.lcj.common.lang.Result;
+import com.lcj.utils.AsyncTaskUtil;
+import com.lcj.utils.JwtUtil;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.stereotype.Component;

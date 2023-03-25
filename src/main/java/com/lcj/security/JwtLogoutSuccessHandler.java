@@ -1,8 +1,8 @@
-package com.fanchen.security;
+package com.lcj.security;
 
 import cn.hutool.json.JSONUtil;
-import com.fanchen.common.lang.Result;
-import com.fanchen.utils.JwtUtil;
+import com.lcj.common.lang.Result;
+import com.lcj.utils.JwtUtil;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
 import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;

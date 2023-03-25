@@ -1,7 +1,7 @@
-package com.fanchen.security;
+package com.lcj.security;
 
 import cn.hutool.json.JSONUtil;
-import com.fanchen.common.lang.Result;
+import com.lcj.common.lang.Result;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.stereotype.Component;

@@ -1,15 +1,14 @@
-package com.fanchen.controller;
+package com.lcj.controller;
 
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.fanchen.annotation.Log;
-import com.fanchen.common.lang.Result;
-import com.fanchen.entity.HealthClock;
-import com.fanchen.entity.SysUser;
-import com.fanchen.entity.SysUserRole;
-import com.fanchen.service.HealthClockService;
-import com.fanchen.service.HealthReportService;
+import com.lcj.annotation.Log;
+import com.lcj.common.lang.Result;
+import com.lcj.entity.HealthClock;
+import com.lcj.entity.SysUser;
+import com.lcj.entity.SysUserRole;
+import com.lcj.service.HealthClockService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -23,16 +22,13 @@ import java.util.List;
  * <p>
  * 打卡健康表 前端控制器
  * </p>
- *
- * @author fanchen
- * @since 2021-12-15
  */
 @RestController
 @RequestMapping("/health/clock")
 public class HealthClockController extends BaseController<HealthClock> {
 
-    @Value("${system.code.teacherRole}")
-    private Long teacherRole;
+    @Value("${system.code.serviceRole}")
+    private Long serviceRole;
     @Autowired
     private HealthClockService healthClockService;
 
@@ -44,7 +40,7 @@ public class HealthClockController extends BaseController<HealthClock> {
         List<SysUserRole> sysUserRoles = sysUserRoleService.list(new QueryWrapper<SysUserRole>().eq("user_id", sysUser.getId()));
         boolean flag = false;
         for (SysUserRole userRole : sysUserRoles) {
-            if (userRole.getRoleId().equals(teacherRole)) {
+            if (userRole.getRoleId().equals(serviceRole)) {
                 flag = true;
                 break;
             }

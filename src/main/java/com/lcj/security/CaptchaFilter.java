@@ -1,8 +1,8 @@
-package com.fanchen.security;
+package com.lcj.security;
 
-import com.fanchen.common.exception.CaptchaException;
-import com.fanchen.common.lang.Const;
-import com.fanchen.utils.RedisUtil;
+import com.lcj.common.exception.CaptchaException;
+import com.lcj.common.lang.Const;
+import com.lcj.utils.RedisUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;

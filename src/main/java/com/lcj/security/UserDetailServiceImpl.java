@@ -1,8 +1,8 @@
-package com.fanchen.security;
+package com.lcj.security;
 
-import com.fanchen.entity.SysUser;
-import com.fanchen.service.SysUserService;
-import com.fanchen.utils.RedisUtil;
+import com.lcj.entity.SysUser;
+import com.lcj.service.SysUserService;
+import com.lcj.utils.RedisUtil;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetails;
