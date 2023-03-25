@@ -49,7 +49,7 @@ public class GoodStockController extends BaseController<GoodStock> {
     public Result save(@Validated @RequestBody GoodStock goodStock, Principal principal) {
         List<GoodDto> list = goodStock.getList();
         List<GoodStock> goodStockList = new ArrayList<>();
-        list.forEach(goodDto -> {
+        for (GoodDto goodDto : list) {
             GoodStock stock = new GoodStock();
             stock.setCreateBy(principal.getName());
             stock.setAccept(goodStock.getAccept());
@@ -74,12 +74,14 @@ public class GoodStockController extends BaseController<GoodStock> {
                 int num = goodDto.getGoodNum();
                 if (num > goodInfo.getTotal()) {
                     throw new RuntimeException("物品 " + goodDto.getGoodName() + " 库存不足，出库失败！");
+                }else {
+                    res = goodInfo.getTotal() - num;
                 }
-                res = goodInfo.getTotal() - num;
+
             }
             goodInfo.setTotal(res);
             goodInfoService.updateById(goodInfo);
-        });
+        };
         boolean batch = goodStockService.saveBatch(goodStockList);
         if (batch) {
             return Result.succ("操作成功！");

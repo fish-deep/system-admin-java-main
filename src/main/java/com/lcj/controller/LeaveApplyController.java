@@ -28,8 +28,8 @@ import java.util.List;
 @RequestMapping("/leave/apply")
 public class LeaveApplyController extends BaseController<LeaveApply> {
 
-    @Value("${system.code.teacherRole}")
-    private Long teacherRole;
+    @Value("${system.code.serviceRole}")
+    private Long serviceRole;
 
     @GetMapping("/list")
     @PreAuthorize("hasAnyAuthority('leave:apply:list', 'leave:record:list')")
@@ -38,7 +38,7 @@ public class LeaveApplyController extends BaseController<LeaveApply> {
         List<SysUserRole> sysUserRoles = sysUserRoleService.list(new QueryWrapper<SysUserRole>().eq("user_id", sysUser.getId()));
         boolean flag = false;
         for (SysUserRole userRole : sysUserRoles) {
-            if (userRole.getRoleId().equals(teacherRole)) {
+            if (userRole.getRoleId().equals(serviceRole)) {
                 flag = true;
                 break;
             }
