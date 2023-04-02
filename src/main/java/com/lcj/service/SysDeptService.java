@@ -7,6 +7,7 @@ import java.util.List;
 
 /**
  * 部门表 服务类
+ * @author pmwy
  */
 public interface SysDeptService extends IService<SysDept> {
 

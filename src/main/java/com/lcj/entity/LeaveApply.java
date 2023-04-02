@@ -14,6 +14,7 @@ import java.util.Date;
 
 /**
  * 请假审批表
+ * @author pmwy
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -43,8 +44,8 @@ public class LeaveApply implements Serializable {
     @ApiModelProperty(value = "状态（0：撤销 1：待审核 2：审核通过 3：审核不通过）")
     private Integer status;
 
-    @ApiModelProperty(value = "学生类型（1：本科生 2：研究生 3：博士生）")
-    @NotNull(message = "学生类型不能为空")
+    @ApiModelProperty(value = "人员类型（1：本科生 2：研究生 3：教职工）")
+    @NotNull(message = "人员类型不能为空")
     private Integer studentType;
 
     @ApiModelProperty(value = "学生姓名")
@@ -59,7 +60,6 @@ public class LeaveApply implements Serializable {
     private String isOutSchool;
 
     @ApiModelProperty(value = "目的地")
-    @NotBlank(message = "目的地不能为空")
     private String address;
 
     @ApiModelProperty(value = "交通工具")

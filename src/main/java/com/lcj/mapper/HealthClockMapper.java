@@ -4,9 +4,8 @@ import com.lcj.entity.HealthClock;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
- * <p>
  * 打卡健康表 Mapper 接口
- * </p>
+ * @author pmwy
  */
 public interface HealthClockMapper extends BaseMapper<HealthClock> {
 

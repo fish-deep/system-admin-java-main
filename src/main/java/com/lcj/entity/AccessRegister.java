@@ -14,6 +14,7 @@ import java.util.Date;
 
 /**
  * 出入登记表
+ * @author pmwy
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -39,22 +40,25 @@ public class AccessRegister implements Serializable {
     @NotNull(message = "出入类型不能为空")
     private Integer type;
 
-    @ApiModelProperty(value = "身份证号")
-    @NotBlank(message = "身份找号不能为空")
-    private String card;
-
-    @ApiModelProperty(value = "备注")
-    private String remark;
-
-    @ApiModelProperty(value = "部门")
-    @NotBlank(message = "部门不能为空")
-    private String dept;
 
     @ApiModelProperty(value = "创建人")
     private String createBy;
+    @ApiModelProperty(value = "请假表id")
+    @NotBlank(message = "外键id不能为空")
+    private Integer leaveId;
+
+    @ApiModelProperty(value = "请假开始时间")
+    @NotBlank(message = "请假开始时间不能为空")
+    private Date startTime;
+
+    @ApiModelProperty(value = "请假结束时间")
+    @NotBlank(message = "请假结束时间不能为空")
+    private Date endTime;
+
+
 
     @ApiModelProperty(value = "创建时间")
-    @TableField(fill = FieldFill.INSERT)
+    @TableField(fill = FieldFill.INSERT)//在插入时由数据库自动填充
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date createTime;
 
@@ -66,6 +70,10 @@ public class AccessRegister implements Serializable {
     @ApiModelProperty(value = "逻辑删除")
     @TableLogic
     private Integer isDelete;
+
+    @ApiModelProperty(value = "判断请假状态 1：请假未开始  2：请假中  3：未归  4：完成请假")
+    @TableField(exist = false)
+    private Integer isOutTime;
 
 
 }

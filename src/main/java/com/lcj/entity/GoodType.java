@@ -13,6 +13,7 @@ import java.util.Date;
 
 /**
  * 物资类型表
+ * @author pmwy
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

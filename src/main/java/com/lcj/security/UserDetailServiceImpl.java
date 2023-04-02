@@ -34,8 +34,8 @@ public class UserDetailServiceImpl implements UserDetailsService {
 
     /**
      * 获取用户权限信息（角色，菜单权限）
-     * @param username 用户id
-     * @return 权限列表
+     * @param username 用户id {@link String}
+     * @return 权限列表 {@link List<GrantedAuthority>}
      */
     public List<GrantedAuthority> getUserAuthority(String username){
         String authority = sysUserService.getUserAuthority(username);

@@ -37,7 +37,9 @@ public class LeaveApplyController extends BaseController<LeaveApply> {
     @ApiOperation("查询全部请假列表")
     public Result list(String username, Long deptId, Integer leaveType, Integer status, String start, String end, Principal principal) {
         SysUser sysUser = (SysUser) redisUtil.get("User:" + principal.getName());
-        List<SysUserRole> sysUserRoles = sysUserRoleService.list(new QueryWrapper<SysUserRole>().eq("user_id", sysUser.getId()));
+        //List<SysUserRole> sysUserRoles = sysUserRoleService.list(new QueryWrapper<SysUserRole>().eq("user_id", sysUser.getId()));
+        List<SysUserRole> sysUserRoles = sysUserRoleService.list(
+            new LambdaQueryWrapper<SysUserRole>().eq(SysUserRole::getUserId,sysUser.getId()));
         boolean flag = false;
         for (SysUserRole userRole : sysUserRoles) {
             if (userRole.getRoleId().equals(serviceRole)) {
@@ -64,7 +66,7 @@ public class LeaveApplyController extends BaseController<LeaveApply> {
         return Result.succ(page);
     }
 
-    @PostMapping
+    @PostMapping("/save")
     @Log(title = "请假管理", businessType = "新增请假")
     @PreAuthorize("hasAnyAuthority('leave:apply:save')")
     @ApiOperation("提交请假记录")

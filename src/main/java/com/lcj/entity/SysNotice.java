@@ -12,6 +12,7 @@ import java.util.Date;
 
 /**
  * 公告表
+ * @author pmwy
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

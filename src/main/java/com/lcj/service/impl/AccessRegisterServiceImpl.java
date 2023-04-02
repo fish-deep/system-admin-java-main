@@ -24,7 +24,7 @@ public class AccessRegisterServiceImpl extends ServiceImpl<AccessRegisterMapper,
     @Resource
     private AccessReturnService accessReturnService;
 
-    @Override
+/*    @Override
     public boolean addRegister(AccessRegister accessRegister) {
         int insert = accessRegisterMapper.insert(accessRegister);
         if (insert > 0){
@@ -42,5 +42,5 @@ public class AccessRegisterServiceImpl extends ServiceImpl<AccessRegisterMapper,
             return true;
         }
         return false;
-    }
+    }*/
 }

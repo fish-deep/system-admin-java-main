@@ -80,7 +80,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
                         .collect(Collectors.joining(","));
                 authority = authority.concat(menuPerms);
             }
-            redisUtil.set("GrantedAuthority:" + sysUser.getUsername(), authority, 60 * 60);
+            redisUtil.set("GrantedAuthority:" + sysUser.getUsername(), authority);
         }
         return authority;
     }

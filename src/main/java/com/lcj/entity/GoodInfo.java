@@ -15,6 +15,7 @@ import java.util.Date;
 
 /**
  * 物资信息表
+ * @author pmwy
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

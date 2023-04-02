@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
  * 操作日志记录 服务类
+ * @author pmwy
  */
 public interface SysOperateLogService extends IService<SysOperateLog> {
 

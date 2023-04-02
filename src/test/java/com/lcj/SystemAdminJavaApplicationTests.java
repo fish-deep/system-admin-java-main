@@ -16,13 +16,11 @@ class SystemAdminJavaApplicationTests {
 
     @Test
     void contextLoads() {
-        List<SysUser> userList = sysUserService.list();
-        for (SysUser user : userList) {
-            System.out.println(user);
-        }
+        String admin = sysUserService.getUserAuthority("admin");
+        System.out.println(admin);
     }
-
-
-
-
 }
+
+
+
+
