@@ -14,6 +14,7 @@ import java.util.Date;
 
 /**
  * 请假审批表
+ * @author pmwy
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -54,9 +55,9 @@ public class LeaveApply implements Serializable {
     @NotBlank(message = "请假时间区间不能为空")
     private String time;
 
-    @ApiModelProperty(value = "请假天数")
-    @NotBlank(message = "请假天数不能为空")
-    private String day;
+    @ApiModelProperty(value = "是否出校（0：出校  1：不出校）")
+    @NotBlank(message = "是否出校不能为空")
+    private String isOutSchool;
 
     @ApiModelProperty(value = "目的地")
     @NotBlank(message = "目的地不能为空")

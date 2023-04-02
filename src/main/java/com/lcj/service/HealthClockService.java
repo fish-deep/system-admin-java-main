@@ -4,9 +4,10 @@ import com.lcj.entity.HealthClock;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
- * <p>
+ *
  * 打卡健康表 服务类
- * </p>
+ * @author pmwy
+ * 
  */
 public interface HealthClockService extends IService<HealthClock> {
 

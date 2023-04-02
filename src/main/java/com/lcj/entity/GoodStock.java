@@ -16,6 +16,7 @@ import java.util.List;
 
 /**
  * 物资出入库表
+ * @author pmwy
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -77,6 +78,7 @@ public class GoodStock implements Serializable {
     @Version
     private Integer version;
 
+    @ApiModelProperty(value = "商品列表dto")
     @TableField(exist = false)
     private List<GoodDto> list;
 

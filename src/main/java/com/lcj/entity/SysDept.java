@@ -21,6 +21,7 @@ import javax.validation.constraints.NotBlank;
 
 /**
  * 部门表
+ * @author pmwy
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -71,12 +72,13 @@ public class SysDept implements Serializable {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date updateTime;
 
+    @ApiModelProperty(value = "逻辑删除")
     @TableLogic
     private Integer isDelete;
-
+    @ApiModelProperty(value = "乐观锁")
     @Version
     private Integer version;
-
+    @ApiModelProperty(value = "部门列表")
     @TableField(exist = false)
     private List<SysDept> children;
 
