@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
  * 请假审批表 服务类
+ * @author pmwy
  */
 public interface LeaveApplyService extends IService<LeaveApply> {
 

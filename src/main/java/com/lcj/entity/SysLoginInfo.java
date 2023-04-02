@@ -13,6 +13,7 @@ import lombok.EqualsAndHashCode;
 
 /**
  * 系统访问记录
+ * @author pmwy
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

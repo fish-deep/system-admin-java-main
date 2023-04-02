@@ -14,6 +14,7 @@ import java.util.Date;
 
 /**
  * 请假审批表
+ * @author pmwy
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

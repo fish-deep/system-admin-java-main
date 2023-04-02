@@ -13,9 +13,8 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * <p>
  * 打卡健康表
- * </p>
+ * @author pmwy
  *
  */
 @Data

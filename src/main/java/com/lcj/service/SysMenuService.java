@@ -6,6 +6,10 @@ import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;
 
+/**
+ * 菜单表
+ * @author pmwy
+ */
 
 public interface SysMenuService extends IService<SysMenu> {
 
