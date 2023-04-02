@@ -8,7 +8,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="system-admin-java" />
-        <module name="system-admin-java-main" />
         <module name="jedisdemo" />
         <module name="springbootdemo" />
       </profile>

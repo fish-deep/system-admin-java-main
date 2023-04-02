@@ -13,6 +13,7 @@ import com.lcj.common.lang.Result;
 import com.lcj.entity.LeaveApply;
 import com.lcj.entity.SysUser;
 import com.lcj.entity.SysUserRole;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
@@ -33,6 +34,7 @@ public class LeaveApplyController extends BaseController<LeaveApply> {
 
     @GetMapping("/list")
     @PreAuthorize("hasAnyAuthority('leave:apply:list', 'leave:record:list')")
+    @ApiOperation("查询全部请假列表")
     public Result list(String username, Long deptId, Integer leaveType, Integer status, String start, String end, Principal principal) {
         SysUser sysUser = (SysUser) redisUtil.get("User:" + principal.getName());
         List<SysUserRole> sysUserRoles = sysUserRoleService.list(new QueryWrapper<SysUserRole>().eq("user_id", sysUser.getId()));
@@ -65,6 +67,7 @@ public class LeaveApplyController extends BaseController<LeaveApply> {
     @PostMapping
     @Log(title = "请假管理", businessType = "新增请假")
     @PreAuthorize("hasAnyAuthority('leave:apply:save')")
+    @ApiOperation("提交请假记录")
     public Result save(@Validated @RequestBody LeaveApply leaveApply, Principal principal) {
         SysUser sysUser = (SysUser) redisUtil.get("User:" + principal.getName());
         leaveApply.setStatus(1);
