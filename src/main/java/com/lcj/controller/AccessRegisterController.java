@@ -51,6 +51,5 @@ public class AccessRegisterController extends BaseController<AccessRegister> {
         Page<AccessRegister> page = accessRegisterService.page(getPage(), wrapper);
         return Result.succ(page);
     }
-
 }
 
